@@ -1,0 +1,25 @@
+/* CSS Document */
+body
+{
+	background-color: black;
+}
+
+p
+{
+	text-align: center;
+}
+
+img
+{
+	text-align: center;
+	border: solid medium; 
+	opacity: .5;
+	border-color: #FF0004;
+	transition: background-color 2s cubic-bezier(1, 1, 1, 1);
+	transition-delay: 0s;
+}
+
+img:hover
+{
+	opacity: 1;
+} 

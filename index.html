@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Doggos</title>
+</head>
+<link href="css.css" rel="stylesheet" type="text/css">
+<body>	
+	<div style="position: absolute; left: 783px; top: 241px;">
+		<img src="placeHolder.png" id="Main" alt="Main" style="height: 300; width: 300; opacity: 1">
+	</div>
+	
+	<div style="position: absolute; left: 609px; top: 45px;">
+		<img id="Pug" src="pugS.jpg" alt="Pug" style="height: 50; width: 50" onClick="switchPug();">
+	</div>
+	
+	<div style="position: absolute; left: 869px; top: 45px;">
+		<img id="Golden" src="goldenS.jpg" alt="Golden" style="height: 50; width: 50" onClick="switchGolden();">
+	</div>
+	
+	<div style="position: absolute; left: 1127px; top: 45px;">
+		<img id="Husky" src="huskyS.jpg" alt="Husky" style="height: 50; width: 50" onClick="switchHusky();">
+	</div>
+	
+<div style="position: absolute; left: 609px; top: 585px;">
+		<img id="Shiba" src="shibaS.jpg" alt="Shiba" style="height: 50; width: 50" onClick="switchShiba();">
+	</div>
+	
+<div style="position: absolute; left: 869px; top: 585px;">
+  <img id="Border" src="borderS.jpg" alt="Border Collie" style="height: 50; width: 50" onClick="switchBorder();">
+	</div>
+	
+	<div style="position: absolute; left: 1127px; top: 585px;">
+		<img id="German" src="germanShepS.jpg" alt="German Shepard" style="height: 50; width: 50" onClick="switchGerman();">
+	</div>
+	
+</body>
+<script>
+	var audio = new Audio('bork.mp3');
+	var c = 0;
+	
+	setInterval(function()
+			{
+		if(c==0)
+		{
+			document.getElementById("Main").style.borderColor="red";	
+			c++
+		}
+		else if(c==1)
+		{
+			document.getElementById("Main").style.borderColor="blue";	
+			c++
+		}
+		else if(c==2)
+		{
+			document.getElementById("Main").style.borderColor="purple";	
+			c++
+		}
+		else if(c==3)
+		{
+			document.getElementById("Main").style.borderColor="green";	
+			c++
+		}
+		else if(c==4)
+		{
+			document.getElementById("Main").style.borderColor="yellow";	
+			c=0;
+		}
+		
+			
+	}, 500)
+	
+	alert("Turn on sound!")
+		function switchPug()
+		{
+			document.getElementById("Main").src="pugB.jpg";
+			document.getElementById("Pug").style.borderColor="#E0FF00";
+			document.getElementById("Golden").style.borderColor="#FF0004";
+			document.getElementById("Husky").style.borderColor="#FF0004";
+			document.getElementById("Border").style.borderColor="#FF0004";
+			document.getElementById("German").style.borderColor="#FF0004";
+			audio.play();
+		}
+		
+		function switchGolden()
+		{
+			document.getElementById("Main").src="goldenB.jpg";
+			document.getElementById("Golden").style.borderColor="#E0FF00";
+			document.getElementById("Pug").style.borderColor="#FF0004";
+			document.getElementById("Husky").style.borderColor="#FF0004";
+			document.getElementById("Border").style.borderColor="#FF0004";
+			document.getElementById("German").style.borderColor="#FF0004";
+			audio.play();
+		}
+		
+		function switchHusky()
+		{
+			document.getElementById("Main").src="huskyB.jpg";
+			document.getElementById("Golden").style.borderColor="#FF0004";
+			document.getElementById("Pug").style.borderColor="#FF0004";
+			document.getElementById("Husky").style.borderColor="#E0FF00";
+			document.getElementById("Shiba").style.borderColor="#FF0004";
+			document.getElementById("Border").style.borderColor="#FF0004";
+			document.getElementById("German").style.borderColor="#FF0004";
+			audio.play();
+		}
+		
+		function switchShiba()
+		{
+			document.getElementById("Main").src="shibaB.jpg";
+			document.getElementById("Golden").style.borderColor="#FF0004";
+			document.getElementById("Pug").style.borderColor="#FF0004";
+			document.getElementById("Husky").style.borderColor="#FF0004";
+			document.getElementById("Shiba").style.borderColor="#E0FF00";
+			document.getElementById("Border").style.borderColor="#FF0004";
+			document.getElementById("German").style.borderColor="#FF0004";
+			audio.play();
+		}
+	
+		function switchBorder()
+		{
+			document.getElementById("Main").src="borderB.jpg";
+			document.getElementById("Golden").style.borderColor="#FF0004";
+			document.getElementById("Pug").style.borderColor="#FF0004";
+			document.getElementById("Husky").style.borderColor="#FF0004";
+			document.getElementById("Shiba").style.borderColor="#FF0004";
+			document.getElementById("Border").style.borderColor="#E0FF00";
+			document.getElementById("German").style.borderColor="#FF0004";
+			audio.play();
+		}
+	
+		function switchGerman()
+		{
+			document.getElementById("Main").src="germanShepB.jpg";
+			document.getElementById("Golden").style.borderColor="#FF0004";
+			document.getElementById("Pug").style.borderColor="#FF0004";
+			document.getElementById("Husky").style.borderColor="#FF0004";
+			document.getElementById("Shiba").style.borderColor="#FF0004";
+			document.getElementById("Border").style.borderColor="#FF0004";
+			document.getElementById("German").style.borderColor="#E0FF00";
+			audio.play();
+		}
+	</script>
+</html>
